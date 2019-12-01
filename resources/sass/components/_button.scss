@@ -1,0 +1,66 @@
+.btn {
+    @apply py-3 px-6 text-sm rounded border-none cursor-pointer shadow-lg;
+
+    &:active {
+        outline: none;
+    }
+
+    &-primary {
+        background-color: $primary-color;
+        color: #ffffff;
+        @include responsive(small) {
+            @apply w-full;
+        }
+    }
+
+    &-requested {
+        @apply bg-gray-600 text-white;
+
+        &:hover {
+            background-color: #5b677d;
+        }
+    }
+
+    &-accept {
+        @apply bg-green-600 text-white;
+
+        &:hover {
+            background-color: #357c47;
+        }
+    }
+
+    &-follow {
+        background-color: $primary-color;
+        color: #ffffff;
+
+        &:hover {
+            background-color: #c30066;
+        }
+    }
+
+    &-unfollow {
+        background-color: #dc0077;
+        color: #ffffff;
+
+        &:hover {
+            background-color: #c20061;
+        }
+    }
+
+    &-back-follow {
+        @apply bg-indigo-500 text-white;
+
+        &:hover {
+            background-color: #646dd7;
+        }
+    }
+
+    &-create {
+        @apply bg-indigo-500 text-white;
+
+        &:hover {
+            background-color: #646dd7;
+        }
+    }
+}
+

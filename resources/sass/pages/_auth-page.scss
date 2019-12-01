@@ -1,0 +1,438 @@
+.logo {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+    z-index: 44;
+
+    h1 {
+        @apply text-4xl;
+        font-family: 'Roboto-Bold';
+    }
+
+    @include responsive(large) {
+        position: relative;
+        left: 0;
+        top: 0;
+        @apply text-left pl-8 pt-12;
+    }
+    @include responsive(medium) {
+        position: relative;
+        left: 0;
+        top: 0;
+        @apply text-center pt-12 pl-0;
+    }
+}
+
+.login {
+    @apply relative h-screen w-2/3 bg-white;
+
+    @include responsive(medium) {
+        @apply w-full;
+    }
+
+    h1 {
+        @apply text-5xl mb-12 text-center;
+        font-family: Roboto-Bold;
+        color: $primary-color;
+    }
+
+    @include responsive(small) {
+        h1 {
+            @apply text-3xl;
+        }
+        .responsive {
+            display: block;
+            a {
+                display: block;
+                @apply mt-6 text-center;
+            }
+        }
+        .question {
+            p {
+                @apply text-sm;
+            }
+            a {
+                @apply text-sm;
+            }
+        }
+    }
+
+    .log-in {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        animation: fadeInLogin .5s;
+        @apply w-2/3;
+    }
+}
+
+.signup {
+    @apply relative h-screen w-2/3 bg-white mt-6;
+
+    @include responsive(medium) {
+        @apply w-full;
+    }
+
+    h1 {
+        @apply text-2xl mb-6 text-center;
+        font-family: Roboto-Bold;
+        color: $primary-color;
+    }
+
+    .sign-up {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        animation: fadeInRegister .5s;
+        @apply w-2/3 mt-4;
+
+    }
+
+
+    @include responsive(large) {
+        .responsive {
+            display: block;
+            a {
+                display: block;
+                @apply mt-4;
+            }
+        }
+    }
+
+    @include responsive(medium) {
+        .responsive {
+            display: flex;
+            align-items: center;
+            a {
+                display: inline;
+            }
+        }
+    }
+
+    @include responsive(small) {
+        .responsive {
+            display: block;
+            a {
+                display: block;
+                @apply text-center;
+            }
+        }
+        .question {
+            p {
+                @apply text-sm;
+            }
+            a {
+                @apply text-sm;
+            }
+        }
+    }
+}
+
+@keyframes fadeInRegister {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes fadeInLogin {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.secondary-cover {
+    @apply w-2/3 h-screen bg-white;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-image: url("/images/map.svg");
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+
+    @include responsive(xxlarge) {
+        @apply w-3/4;
+    }
+
+    @include responsive(medium) {
+        display: none;
+    }
+}
+
+.primary-cover {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    overflow: hidden;
+
+    .replace-svg {
+        display: none;
+
+        @include responsive(large) {
+            display: block;
+            @apply w-1/2 h-screen;
+            background-color: $primary-color;
+        }
+
+        @include responsive(medium) {
+            @apply w-full;
+        }
+    }
+
+    .img-cover {
+        width: 1000px;
+        height: 1000px;
+        background-color: #E90075;
+        border-radius: 20%;
+        transform: rotate(45deg);
+        position:absolute;
+        left: -400px;
+        top: -80px;
+
+        @include responsive(xxlarge) {
+            left: -550px;
+        }
+        @include responsive(xlarge) {
+            left: -590px;
+            top: -100px;
+        }
+
+        @include responsive(large) {
+            display: none;
+        }
+    }
+
+    .content {
+        @apply absolute text-white;
+        left: 20%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 66;
+        h2 {
+            @apply text-4xl mb-8;
+            font-family: 'Roboto-Bold';
+            letter-spacing: 1px;
+        }
+        p {
+            @apply text-xl mb-4;
+        }
+
+        @include responsive(xlarge) {
+            left: 25%;
+        }
+
+        @include responsive(large) {
+            @apply pr-4;
+            h2 {
+                @apply text-3xl;
+            }
+            p {
+                @apply text-lg;
+            }
+            a {
+                display: block;
+                @apply w-full -mx-1 text-center;
+            }
+        }
+
+        @include responsive(medium) {
+            @apply w-full px-8 text-center px-12;
+            left: 50%;
+        }
+
+        @include responsive(small) {
+            @apply px-4;
+            p {
+                @apply text-base;
+            }
+        }
+    }
+
+    .new-content {
+        @apply absolute text-white;
+        left: 50%;
+        top: 50%;
+        transform: translateY(-50%);
+        animation: go-to-left-new-content .5s;
+        animation-fill-mode: forwards;
+        z-index: 66;
+        h3 {
+            @apply text-4xl mb-8;
+            font-family: 'Roboto-Bold';
+            letter-spacing: 1px;
+        }
+        p {
+            @apply text-xl mb-4;
+        }
+
+        @include responsive(medium) {
+            display: none;
+        }
+    }
+
+    .circle {
+        position: absolute;
+        right: 85%;
+        top: 78%;
+        width:300px;
+        height: 300px;
+        border-radius: 100%;
+        border: 40px solid $secondary-color;
+        z-index: 55;
+        opacity: .7;
+
+        @include responsive(xxlarge) {
+            right: 92%;
+        }
+
+        @include responsive(xlarge) {
+            right: 85%;
+        }
+
+        @include responsive(large) {
+            right: 70%;
+        }
+
+
+    }
+    .circle2 {
+        position: absolute;
+        left: 32%;
+        top: 48%;
+        width:100px;
+        height: 100px;
+        border-radius: 20%;
+        border: 20px solid $secondary-color;
+        z-index: 55;
+        transform: rotate(20deg);
+        opacity: .7;
+
+        @include responsive(xxlarge) {
+            left: 30%;
+            top: 40%;
+        }
+
+        @include responsive(xlarge) {
+            left: 40%;
+        }
+
+        @include responsive(large) {
+            left: 28%;
+        }
+
+        @include responsive(medium) {
+            left: 68%;
+        }
+
+
+        &::after {
+            content: '';
+            position: absolute;
+            right: 700%;
+            top: -140%;
+            width: 300px;
+            height: 300px;
+            border-radius: 20%;
+            border: 25px solid $secondary-color;
+            z-index: 55;
+            transform: rotate(-40deg);
+            opacity: .7;
+
+            @include responsive(xxlarge) {
+                right: 600%;
+                transform: rotate(-60deg);
+            }
+
+            @include responsive(large) {
+                right: 400%;
+            }
+
+            @include responsive(medium) {
+                right: 600%;
+            }
+
+        }
+    }
+}
+
+@keyframes go-to-left-new-content {
+    0% {
+        left: 50%;
+    }
+    50% {
+        left: 20%;
+    }
+    100% {
+        left: 8%;
+    }
+}
+
+.go-to-right {
+    animation: goToRight .3s linear;
+    animation-fill-mode: forwards;
+
+    @include responsive(medium) {
+        display: none;
+
+        .circle, .circle2 {
+            display: none;
+        }
+    }
+}
+.get-out {
+    animation: getOut 1s linear;
+    animation-fill-mode: forwards;
+}
+@keyframes goToRight {
+    0% {
+        left: 0;
+    }
+    25% {
+        left: 35%;
+    }
+    50% {
+        left: 65%;
+    }
+    75% {
+        left: 95%;
+    }
+    100% {
+        right: 0; bottom: 0; top: 0; left: 100%;
+        transform: translateX(-100%);
+        @apply w-1/3;
+        background-color: $primary-color;
+    }
+}
+@keyframes getOut {
+    0% {
+        right: 0;
+    }
+    50% {
+        right: -50%;
+    }
+    100% {
+        right: -100%;
+    }
+}
+
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        display: none;
+    }
+}

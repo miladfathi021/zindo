@@ -1,0 +1,33 @@
+@import "tailwindcss/base";
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";
+
+
+// Base
+@import "base/variables";
+@import "base/typography";
+@import "base/global";
+
+// Mixins
+@import "mixins/media";
+
+// Helpers
+@import "helpers/grid";
+@import "helpers/typography";
+
+// Components
+@import "components/form";
+@import "components/button";
+@import "components/feedback";
+@import "components/main-nav";
+@import "components/profile-nav";
+@import "components/card";
+@import "components/edit-profile";
+@import "components/posts";
+@import "components/user-dropdown";
+@import "components/show-post";
+
+// Pages
+@import "pages/auth-page";

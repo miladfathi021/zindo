@@ -1,0 +1,68 @@
+.main-nav {
+    @apply flex items-center w-full py-1 text-white relative;
+    background-color: $primary-color;
+    border-bottom: 2px solid $secondary-color;
+
+    .bars {
+        display: none;
+    }
+
+    @include responsive(small) {
+        .bars {
+            display: block;
+            cursor: pointer;
+        }
+        .user-login {
+            display: none;
+        }
+        .user-dropdown-responsive {
+            position: fixed;
+            right: 0; top: 20px; left: 0;
+            background-color: rgba(233,0,117, .9);
+            z-index: 9999;
+            border-bottom: 2px solid $secondary-color;
+            animation: user-dropdown .3s forwards;
+
+            &--items {
+                @apply px-4 py-3 text-base block;
+            }
+        }
+
+        @keyframes user-dropdown {
+            0% {
+                top: 20px;
+            }
+            100% {
+                top: 60px;
+            }
+        }
+    }
+}
+
+.main-logo {
+    @apply text-white text-4xl;
+    letter-spacing: 1px;
+    font-family: 'Roboto-Bold';
+
+    span {
+        @apply bg-white rounded px-1;
+        font-family: 'Roboto-Bold';
+        color: $primary-color;
+    }
+
+    @include responsive(xxlarge) {
+        color: yellow;
+    }
+    @include responsive(xlarge) {
+        color: green;
+    }
+    @include responsive(large) {
+        color: purple;
+    }
+    @include responsive(medium) {
+        color: blue;
+    }
+    @include responsive(small) {
+        color: orange;
+    }
+}

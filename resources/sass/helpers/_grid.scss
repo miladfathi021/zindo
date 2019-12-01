@@ -1,0 +1,27 @@
+.container {
+    min-width: 1200px;
+    width: 1200px;
+    @apply mx-auto;
+
+    @include responsive(xxlarge) {
+        min-width: $xlarge !important;
+        width: $xlarge !important;
+    }
+    @include responsive(xlarge) {
+        min-width: $large !important;
+        width: $large !important;
+    }
+    @include responsive(large) {
+        min-width: $medium !important;
+        width: $medium !important;
+    }
+    @include responsive(medium) {
+        min-width: $small !important;
+        width: $small !important;
+    }
+
+    @include responsive(small) {
+        min-width: 320px !important;
+        width: 320px !important;
+    }
+}

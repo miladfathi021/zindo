@@ -1,0 +1,50 @@
+.user-dropdown {
+    @apply rounded text-gray-700 bg-white shadow-lg;
+    min-width: 150%;
+    width: 170%;
+    position: absolute;
+    right: 0;
+    top: 95%;
+    z-index: 22;
+
+    &::after {
+        border-left: 0;
+        border-bottom: 0;
+        content: " ";
+        display: block;
+        height: 11px;
+        pointer-events: none;
+        position: absolute;
+        -webkit-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+        width: 11px;
+        background-color: #ffffff;
+        bottom: calc(100% - 7px);
+        right: 60px;
+        z-index: -11;
+    }
+
+    &--items {
+        @apply px-4 py-3 text-base block;
+        transition: background-color .1s linear;
+        &:not(:first-child):hover {
+            @apply bg-indigo-400;
+            color: white;
+            cursor: pointer;
+        }
+
+        &:first-child:hover {
+            @apply bg-indigo-400 rounded-tl rounded-tr;
+            color: white;
+            cursor: pointer;
+        }
+        &:last-child:hover {
+            @apply bg-indigo-400 rounded-bl rounded-br;
+            color: white;
+            cursor: pointer;
+        }
+    }
+}

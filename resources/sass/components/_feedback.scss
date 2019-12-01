@@ -1,0 +1,11 @@
+.feedback {
+    @apply text-sm mt-2 ml-3;
+
+    &-danger {
+        @apply text-red-600;
+    }
+
+    &-success {
+        @apply text-green-600;
+    }
+}

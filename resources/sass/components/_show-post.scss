@@ -1,0 +1,25 @@
+.show-post {
+    @apply flex items-start justify-between mt-12 mb-64;
+}
+
+.show-post-image {
+    @apply w-1/2;
+
+    .image {
+        @apply w-full rounded;
+    }
+
+    img {
+        @apply w-full rounded shadow-lg;
+        height: 500px;
+        object-fit: cover;
+        position: relative;
+        display: block;
+        z-index: 22;
+    }
+
+}
+
+.show-post-caption {
+    @apply w-1/2 px-6;
+}

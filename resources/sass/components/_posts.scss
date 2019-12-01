@@ -1,0 +1,128 @@
+.post-list {
+    @include responsive(xlarge) {
+        @apply -mx-1;
+    }
+}
+.posts {
+    &-image {
+        @apply w-full;
+        height: 350px;
+        object-fit: cover;
+        position: relative;
+        display: block;
+        z-index: 22;
+    }
+
+    @include responsive(xlarge) {
+        &-image {
+            @apply w-full;
+            height: 255px !important;
+            object-fit: cover;
+            position: relative;
+            display: block;
+            z-index: 22;
+        }
+
+        div {
+            @apply px-1;
+        }
+    }
+    @include responsive(large) {
+        @apply mb-6;
+        &-image {
+            @apply w-full;
+            height: 208px !important;
+            object-fit: cover;
+            position: relative;
+            display: block;
+            z-index: 22;
+        }
+
+        div {
+            @apply px-1;
+        }
+    }
+
+    @include responsive(medium) {
+        @apply mb-3;
+        &-image {
+            @apply w-full;
+            height: 148px !important;
+            object-fit: cover;
+            position: relative;
+            display: block;
+            z-index: 22;
+        }
+
+        div {
+            @apply px-1;
+        }
+    }
+
+    @include responsive(small) {
+        @apply mb-2;
+        &-image {
+            @apply w-full;
+            height: 101px !important;
+            object-fit: cover;
+            position: relative;
+            display: block;
+            z-index: 22;
+        }
+
+        div {
+            @apply px-1;
+        }
+    }
+}
+
+
+.create-post {
+    @include responsive(small) {
+        display: block;
+        width: 100%;
+        .choose-image {
+            @apply w-full mb-4;
+            height: 100px !important;
+            span {
+                height: 100px !important;
+            }
+            img {
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+
+        .caption-input {
+            @apply w-full;
+            height: 200px !important;
+            textarea {
+                height: 200px !important;
+            }
+        }
+    }
+
+    @include responsive(medium) {
+        display: block;
+        width: 100%;
+        .choose-image {
+            @apply w-full mb-4;
+            height: 150px !important;
+            span {
+                height: 150px !important;
+            }
+            img {
+                width: 100% !important;
+                height: 100% !important;
+            }
+        }
+
+        .caption-input {
+            @apply w-full;
+            height: 220px !important;
+            textarea {
+                height: 220px !important;
+            }
+        }
+    }
+}

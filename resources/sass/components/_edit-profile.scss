@@ -1,0 +1,192 @@
+.nav-edit-profile {
+    @apply min-h-screen;
+    width: 33.333333%;
+    background-color: $primary-color;
+    border-right: 1px solid $secondary-color;
+    position: fixed;
+    left: 0; top: 0; bottom: 0;
+    z-index: 99;
+
+    @include responsive(medium) {
+        width: 100% !important;
+        position: relative;
+        min-height: 200px !important;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: start;
+        align-items: start;
+        padding-top: 2rem;
+
+        .avatar {
+            margin-top: 10px !important;
+            width: 120px;
+            height: 120px;
+            justify-self: center;
+
+            .edit-avatar {
+                width: 120px !important;
+                height: 120px !important;
+            }
+
+            img {
+                width: 120px !important;
+                height: 120px !important;
+            }
+        }
+
+        .name {
+            text-align: left !important;
+            @apply mt-0 text-lg;
+            //margin-left: -15px;
+            text-align: left;
+        }
+
+        .username {
+            @apply text-base;
+            grid-row: 2;
+            grid-column: 2;
+            text-align: left;
+            margin-top: -100px;
+            //margin-left: -37px;
+        }
+
+        .bio {
+            text-align: left !important;
+            @apply text-sm;
+            margin-top: -70px;
+            padding: 0 !important;
+            grid-column: 2 / span 3;
+            justify-self: center;
+        }
+
+        .home {
+            text-align: right !important;
+            @apply mt-0 pr-4 py-2;
+            position: absolute;
+            right: 0;
+            top: 2px;
+        }
+    }
+
+    @include responsive(small) {
+        width: 100% !important;
+        position: relative;
+        min-height: 200px !important;
+        display: block;
+        padding-top: 2rem;
+
+        .avatar {
+            @apply mx-auto;
+            margin-top: 0px !important;
+            width: 120px;
+            height: 120px;
+
+            .edit-avatar {
+                width: 120px !important;
+                height: 120px !important;
+            }
+
+            img {
+                width: 120px !important;
+                height: 120px !important;
+            }
+        }
+
+        .name {
+            text-align: center !important;
+            @apply mt-0;
+            font-size: 1.5rem !important;
+            margin-bottom: 1rem !important;
+        }
+
+        .username {
+            font-size: 1rem !important;
+            text-align: center;
+            margin-top: 0px;
+            margin-bottom: 1rem !important;
+        }
+
+        .bio {
+            text-align: center !important;
+            @apply text-sm;
+            margin-top: 0px;
+            padding: 0 1rem 1rem 1rem !important;
+        }
+
+        .home {
+            text-align: right !important;
+            @apply mt-0 pr-4 py-2;
+            position: absolute;
+            right: 0;
+            top: 2px;
+        }
+    }
+
+    @include responsive(large) {
+        .edit-avatar, .edit-avatar-img {
+            width: 150px !important;
+            height: 150px !important;
+        }
+    }
+
+    @include responsive(xlarge) {
+        .name {
+            @apply text-lg;
+        }
+        .username {
+            @apply text-sm;
+        }
+        .bio {
+            @apply text-lg;
+        }
+    }
+}
+
+.nav-edit-profile-content {
+    margin-left: 34%;
+    @include responsive(medium) {
+        width: 100% !important;
+        margin-left: 0;
+
+        .update-box-responsive {
+            @apply w-full;
+        }
+
+        .update-message-edit-profile {
+            top: 50% !important;
+        }
+    }
+}
+
+
+@keyframes right-to-left-success {
+    0% {
+        right: -40%;
+        opacity: 1;
+    }
+    20% {
+        right: 0;
+        opacity: 1;
+    }
+    40% {
+        right: 0;
+        opacity: 1;
+        z-index: 55;
+    }
+    60% {
+        right: 0;
+        opacity: 1;
+        z-index: 55;
+    }
+    80% {
+        right: 0;
+        opacity: 1;
+        z-index: 55;
+    }
+    100% {
+        right: 180%;
+        opacity: 0;
+        display: none;
+        z-index: 55;
+    }
+}
