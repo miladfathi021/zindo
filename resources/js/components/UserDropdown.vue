@@ -14,7 +14,7 @@
         <div @mouseover="isMobile ? null : visible = true" @mouseleave="isMobile ? null : visible = false">
             <div class="flex items-center justify-center cursor-pointer py-2 user-login">
                 <div class="flex items-center">
-                    <img style="width: 40px; height: 40px;" class="rounded-full mr-2 border-2 border-white" :src="user.profile.avatar != null ? '/' + user.profile.avatar : '/images/avatar.svg'">
+                    <img style="width: 40px; height: 40px;" class="rounded-full mr-2 border-2 border-white" :src="user.profile.avatar != null ? '/storage/' + user.profile.avatar : '/images/avatar.svg'">
                     <span class="block text-lg">{{ user.name.length > 20 ? user.name.substr(0, 19) + '...' : user.name }}</span>
                 </div>
             </div>

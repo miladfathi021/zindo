@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a9c15a53-f4a7-4d44-a4e5-866d01634835" name="Default Changelist" comment="" />
+    <list default="true" id="a9c15a53-f4a7-4d44-a4e5-866d01634835" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/Avatar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/Avatar.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/UserDropdown.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/UserDropdown.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/pages/Posts.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/pages/Posts.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/profiles/index.blade.php" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +29,9 @@
         <option value="SCSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2">
     <include_path>
@@ -113,7 +124,9 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1TfJ3QHTZToQ2MalBy7TGQ7GlPe" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -294,10 +307,28 @@
       <workItem from="1575094841847" duration="3102000" />
       <workItem from="1575141019793" duration="3385000" />
       <workItem from="1575181205462" duration="2196000" />
+      <workItem from="1575220832560" duration="1399000" />
+      <workItem from="1575355643545" duration="106000" />
+      <workItem from="1575359887858" duration="649000" />
+      <workItem from="1575365330583" duration="83000" />
+      <workItem from="1575393651427" duration="1205000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

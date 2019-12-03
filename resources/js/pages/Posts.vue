@@ -6,7 +6,7 @@
             <div class="posts w-1/3 mb-12" v-for="post of posts">
                 <div class="px-6 rounded">
                     <a :href="'/' + user.username + '/posts/' + post.id">
-                        <img class="posts-image rounded shadow cursor-pointer" :src="post.image" :alt="user.name">
+                        <img class="posts-image rounded shadow cursor-pointer" :src="'/storage/' + post.image" :alt="user.name">
                     </a>
                 </div>
             </div>

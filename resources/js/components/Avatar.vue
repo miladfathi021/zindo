@@ -31,7 +31,7 @@
         computed: {
             avatarUrl () {
                 console.log('/storage/' + this.person.profile.avatar, 'main');
-                return this.person.profile.avatar ? '/' + this.person.profile.avatar : '/images/avatar.svg';
+                return this.person.profile.avatar ? '/storage/' + this.person.profile.avatar : '/images/avatar.svg';
             }
         },
 

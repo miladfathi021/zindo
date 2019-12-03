@@ -11,7 +11,7 @@
                 <div class="bio w-1/3 flex items-center relative">
                     <div class="avatar">
                         <img
-                            src="{{ $user->profile->avatar ? '/' . $user->profile->avatar : '/images/avatar.svg' }}"
+                            src="{{ $user->profile->avatar ? '/storage/' . $user->profile->avatar : '/images/avatar.svg' }}"
                             alt="Avatar">
                     </div>
                     <div class="biography">
